@@ -2,6 +2,23 @@
 
 This project involves recognizing Indian Sign Language (ISL) gestures using a deep learning model. The project includes various scripts for collecting data, processing it, training a model, and testing the model.
 
+## Directory Structure
+
+```
+.
+├── collectData.py
+├── convert2NPY.py
+├── handSignModel.py
+├── handSignRecognizer.py
+├── makeDataFrame.py
+├── model/
+│   └── model.h5
+├── requirements.txt
+├── sign_language_videos/
+│   └── (collected video files)
+└── keypoints_data/
+    └── (extracted keypoints data)
+```
 ## Project Setup
 
 ### Virtual Environment
@@ -80,29 +97,3 @@ This project involves recognizing Indian Sign Language (ISL) gestures using a de
    ```bash
    python handSignRecognizer.py
    ```
-
-## Directory Structure
-
-```
-.
-├── collectData.py
-├── convert2NPY.py
-├── handSignModel.py
-├── handSignRecognizer.py
-├── makeDataFrame.py
-├── model/
-│   └── model.h5
-├── requirements.txt
-├── sign_language_videos/
-│   └── (collected video files)
-└── keypoints_data/
-    └── (extracted keypoints data)
-```
-
-## Requirements
-
-Install the required packages using:
-
-```bash
-pip install -r requirements.txt
-```
